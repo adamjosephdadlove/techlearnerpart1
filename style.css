@@ -5,4 +5,18 @@
 .logo {
   font-family: "Bungee Hairline", sans-serif;
   float: left;
+  font-size: 40px;
+  margin: 0;
+}
+
+ul {
+display: flex; /* Makes the list horizontal */
+    gap: 20px;     /* Adds space between links */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul li {
+  list-style-type: none;
+  text-decoration: none;
 }
