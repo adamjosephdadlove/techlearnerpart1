@@ -179,3 +179,16 @@ body {
     align-items: center;    
   }
 }
+
+.questionButton {
+  display: inline-block;
+  color: #222;
+  background-color: transparent;
+  font-family: "Mono Space", monospace; 
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px 175px 5px;
+  box-shadow:  -3px 3px 5px rgba(0,0,0,0.2);
+  width: 400px;
+  height: auto;
+}
