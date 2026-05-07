@@ -75,16 +75,25 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
+  .hamburger {
+    display: flex; /* 1. Show the burger icon */
   }
-}
 
-@media (max-width: 400px) {
-  .logo {
-    font-size: 24px;
+  .seperated-navbar {
+    display: none; /* 2. Hide the bar by default on mobile */
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 200px;
+  }
+
+  .seperated-navbar.active {
+    display: block; /* 3. Show it when the burger is clicked */
+  }
+
+  /* Keeps logo and burger on the same line */
+  .container {
+    flex-direction: row; 
+    justify-content: space-between;
   }
 }
