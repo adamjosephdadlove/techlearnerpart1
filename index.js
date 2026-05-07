@@ -11,3 +11,15 @@ window.addEventListener('resize', function(){
     navBar.classList.remove('active');
   }
 });
+
+function goToMath() {
+  window.location.href="math.html";
+}
+
+function goToScience() {
+  window.location.href="science.html";
+}
+
+function goToEnglish() {
+  window.location.href="english.html";
+}
