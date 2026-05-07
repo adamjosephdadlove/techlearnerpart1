@@ -1,2 +1,2 @@
 # techlearnerpart1
-Contains first final project. Is a quiz-based website.
+This is my project that contains multiple quizzes in education. Get ready for some fun!
