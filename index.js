@@ -1,7 +1,8 @@
 const menuBtn = document.getElementById('menu-btn');
 const navBar = document.getElementById('nav-bar');
-const answer = "Correct";
+let score = 0;
 
+if()
 menuBtn.addEventListener('click', () => {
   navBar.classList.toggle('active');
 });
@@ -24,6 +25,9 @@ function goToEnglish() {
   window.location.href="english.html";
 }
 
-document.getElementsByClassName("questionButtons").addEventListener("click", function() {
+function checkEffieciently() {
   
+document.getElementsByClassName("questionButtons").addEventListener("click", function() {
+  document.getElementById("textResults").innerHTML = `You got ${score} out of 5.`;
 });
+}
