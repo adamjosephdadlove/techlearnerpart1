@@ -26,21 +26,6 @@ function goToEnglish() {
 }
 
 
-function select(choice) {
-  choice.classList.toggle("active");
-}
-
-function checkEfficiently() {
-  let score = 0;
-
-  let correct = document.getElementsByClassName("questionButtons");
-
- 
-  if (correct[0].classList.contains("active")) { score = score + 1; }
-  if (correct[1].classList.contains("active")) { score = score + 1; }
-  if (correct[2].classList.contains("active")) { score = score + 1; }
-  if (correct[3].classList.contains("active")) { score = score + 1; }
-  if (correct[4].classList.contains("active")) { score = score + 1; }
-
-  document.querySelector(".smallText").innerHTML = "You got " + score + " out of 5.";
+function ans() {
+  alert("Correct");
 }
