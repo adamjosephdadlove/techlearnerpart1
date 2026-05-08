@@ -23,3 +23,7 @@ function goToScience() {
 function goToEnglish() {
   window.location.href="english.html";
 }
+
+document.getElementsByClassName("questionButtons").addEventListener("click", function() {
+  
+});
