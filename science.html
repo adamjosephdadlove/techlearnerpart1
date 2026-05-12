@@ -17,55 +17,57 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
 
   <body>
      <div class="container"> 
-           <a class="logo"> TechLearner </a>
-           <div class="hamburger" id="menu-btn">
-    <div class="hamburger-lines"></div>
-    <div class="hamburger-lines"></div>
-    <div class="hamburger-lines"></div>
-           </div>
+           <a class="logo" href="index.html"> TechLearner </a>
+
            
            <div class="seperated-navbar" id="nav-bar">
            <ul> 
-               <li><a href="#mathQuiz"> Math </a> </li>
-               <li><a href="#scienceQuiz"> Science</a></li>
-               <li><a href="#englishQuiz"> English</a> </li>
+               <li><a href="math.html"> Math </a> </li>
+               <li><a href="science.html"> Science</a></li>
+               <li><a href="english.html"> English</a> </li>
            </ul>
            </div>
        </div>
+       
+       <p class="largeText">Which noble gas is the lightest?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) Argon</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) Helium</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) Neon</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Krypton</button>
 
-<p class="largeText">Which of the following is the lightest noble gas?</p>
-<button class="questionButton">A) Neon</button>
-<button class="questionButton">B) Argon</button>
-<button class="questionButton"  onclick="ans()">C) Helium</button>
-<button class="questionButton">D) Krypton</button>
+<p class="largeText">Why are noble gases called “inert”?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) They are metals</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) Their outer shells are full</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) They are radioactive</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) They dissolve in water</button>
 
-<p class="largeText">Why are noble gases called "noble" or "inert"?</p>
-<button class="questionButton">A) They are very expensive</button>
-<button class="questionButton">B) They are highly reactive</button>
-<button class="questionButton"  onclick="ans()">C) Their outer electron shells are full</button>
-<button class="questionButton">D) They only exist as solids</button>
+<p class="largeText">Which gas glows reddish‑orange in signs?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) Helium</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) Neon</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) Xenon</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Radon</button>
 
-<p class="largeText">Which noble gas is used in signs to produce a reddish-orange glow?</p>
-<button class="questionButton">A) Radon</button>
-<button class="questionButton"  onclick="ans()">B) Neon</button>
-<button class="questionButton">C) Xenon</button>
-<button class="questionButton">D) Argon</button>
+<p class="largeText">What is the atomic number of helium?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) 1</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) 2</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) 3</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) 4</button>
 
-<p class="largeText">What is the atomic number of Helium?</p>
-<button class="questionButton">A) 1</button>
-<button class="questionButton" onclick="ans()">B) 2</button>
-<button class="questionButton">C) 8</button>
-<button class="questionButton">D) 10</button>
+<p class="largeText">Which noble gas is used in light bulbs?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) Neon</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) Argon</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) Helium</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Xenon</button>
 
-<p class="largeText">Which noble gas is often used in light bulbs to protect the filament?</p>
-<button class="questionButton"  onclick="ans()">A) Argon</button>
-<button class="questionButton">B) Hydrogen</button>
-<button class="questionButton">C) Oxygen</button>
-<button class="questionButton">D) Chlorine</button>
+<button id="finalSubmission" onclick="submit()">Submit quiz</button>
 
+
+ <p id="scoreResult"> </p>
   </body>
 </html>
