@@ -17,53 +17,53 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
 
   <body>
      <div class="container"> 
-           <a class="logo"> TechLearner </a>
-           <div class="hamburger" id="menu-btn">
-    <div class="hamburger-lines"></div>
-    <div class="hamburger-lines"></div>
-    <div class="hamburger-lines"></div>
-           </div>
+           <a class="logo" href="index.html"> TechLearner </a>
            
            <div class="seperated-navbar" id="nav-bar">
            <ul> 
-               <li><a href="#mathQuiz"> Math </a> </li>
-               <li><a href="#scienceQuiz"> Science</a></li>
-               <li><a href="#englishQuiz"> English</a> </li>
+               <li><a href="math.html"> Math </a> </li>
+               <li><a href="science.html"> Science</a></li>
+               <li><a href="english.html"> English</a> </li>
            </ul>
            </div>
        </div>
-   <p class="largeText">What is the ratio of a circle's circumference to its diameter?</p>
-<button class="questionButton">A) 2.14</button>
-<button class="questionButton"  onclick="ans()">B) 3.14</button>
-<button class="questionButton">C) 1.61</button>
-<button class="questionButton">D) 9.81</button>
+    <p class="largeText">What is the ratio of a circle's circumference to its diameter?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) 2.14</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) 3.14</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) 1.61</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) 9.81</button>
 
-<p class="largeText">Which Greek letter is used to represent the "sum" of a series of numbers?</p>
-<button class="questionButton">A) Alpha</button>
-<button class="questionButton">B) Delta</button>
-<button class="questionButton"  onclick="ans()">C) Sigma</button>
-<button class="questionButton">D) Omega</button>
+<p class="largeText">Which Greek letter is used to represent the 'sum' of a series of numbers?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) Alpha</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">B) Delta</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">C) Sigma</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Omega</button>
 
 <p class="largeText">If a circle has a radius of 5, what is its diameter?</p>
-<button class="questionButton">A) 2.5</button>
-<button class="questionButton"  onclick="ans()">B) 10</button>
-<button class="questionButton">C) 15</button>
-<button class="questionButton">D) 25</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.add('selected')">A) 2.5</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) 10</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) 15</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) 25</button>
 
 <p class="largeText">What is the name for the distance around the outside of a circle?</p>
-<button class="questionButton">A) Area</button>
-<button class="questionButton">B) Volume</button>
-<button class="questionButton"  onclick="ans()">C) Circumference</button>
-<button class="questionButton">D) Diameter</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) Area</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">B) Volume</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">C) Circumference</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Diameter</button>
 
-<p class="largeText">Which Greek letter looks like a triangle and is often used to show "change"?</p>
-<button class="questionButton">A) Beta</button>
-<button class="questionButton"  onclick="ans()">B) Delta</button>
-<button class="questionButton">C) Gamma</button>
-<button class="questionButton">D) Theta</button>
+<p class="largeText">Which Greek letter looks like a triangle and is often used to show 'change'?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.add('selected')">A) Beta</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) Delta</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) Gamma</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Theta</button>
+
+<button id="finalSubmission" onclick="submit()">Submit quiz</button>
+  <p id="scoreResult"> </p>
   </body>
 </html>
