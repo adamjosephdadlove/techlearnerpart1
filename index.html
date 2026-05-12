@@ -21,7 +21,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="math.html">
+    <link rel="stylesheet" href="science.html">
+    <link rel="stylesheet" href="english.html">
 </head>
 <body>
     
@@ -41,9 +46,9 @@
                
            <ul> 
                
-               <li><a href="#mathQuiz"> Math </a> </li>
-               <li><a href="#scienceQuiz"> Science</a></li>
-               <li><a href="#englishQuiz"> English</a> </li>
+               <li><a href="math.html"> Math </a> </li>
+               <li><a href="science.html"> Science</a></li>
+               <li><a href="english.html"> English</a> </li>
                
            </ul>
                
@@ -57,23 +62,44 @@
       <h3 class="largeText"> The Pi-Thons: </h3>
     <p class="smallText"> A sharp and "striking" quiz focusing on geometry, circles, and the Greek alphabet. </p>
        
-    <button class="enter" onclick="goToMath()"> Start quiz! </button>
+    <button class="enter" onclick="window.location.href='math.html'"> Start quiz! </button>
    </div>
            
     <div class="Division"> 
       <h3 class="largeText"> Metaphorically Speaking: </h3>
     <p class="smallText"> A creative round identifying figurative language like similes, personification, and hyperboles.</p>
         
-    <button class="enter" onclick="goToEnglish()"> Start quiz! </button>
+    <button class="enter" onclick="window.location.href='english.html'"> Start quiz! </button>
    </div>
            
     <div class="Division"> 
       <h3 class="largeText"> Noble Intentions: </h3>
     <p class="smallText"> A quiz exclusively about the Noble Gases in Group 18 (Helium, Neon, Argon, etc.).</p>
         
-    <button class="enter" onclick="goToScience()"> Start quiz! </button>
+    <button class="enter" onclick="window.location.href='science.html'"> Start quiz! </button>
    </div>
            
    </div>
+   <div class="loginFlexbox">
+    <div class="loginContainer"> 
+    <h2 class="loginTitle"> Create Account </h2>
+   <input type="text" required placeholder="Create your username" id="userName"> 
+   <input type="password" required placeholder="Create your password" id="passWord"> 
+  <button class="loginEnter" onclick="createAccount()"> Create </button>
+  <p id="accountResult"> </p>
+    </div>
+
+  <div class="loginContainer"> 
+    <h2 class="loginTitle"> Login </h2>
+   <input type="text" required placeholder="Type your username" id="userNameConfirm"> 
+   <input type="password" required placeholder="Type your password" id="passWordConfirm"> 
+  <button class="loginEnter" onclick="accountLogin()"> Login </button>
+  <p id="loginResult"> </p>
+   </div>
+ </div>
+<footer>
+   <p class="smallText">All right reserved. &copy;TechLearner.</p>
+</footer>
+
 </body>
 </html>
