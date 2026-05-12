@@ -1,31 +1,36 @@
-const menuBtn = document.getElementById('menu-btn');
-const navBar = document.getElementById('nav-bar');
-let score = 0;
-
-if()
-menuBtn.addEventListener('click', () => {
-  navBar.classList.toggle('active');
-});
-
-window.addEventListener('resize', function(){
-  if (window.innerWidth > 768) {
-    navBar.classList.remove('active');
-  }
-});
-
-function goToMath() {
-  window.location.href="math.html";
-}
-
-function goToScience() {
-  window.location.href="science.html";
-}
-
-function goToEnglish() {
-  window.location.href="english.html";
-}
-
+ let score = 0; 
 
 function ans() {
-  alert("Correct");
+   score+=1;
+    if(score > 5) score=5;
+}
+
+function wrongAns() {
+   score-=1;
+    if(score < 0) score=0;
+  }
+  function submit() {
+    document.getElementById("scoreResult").innerHTML = `You got ${score} out of 5.`;
+}
+
+function createAccount() {
+  const username = document.getElementById("userName").value;
+  const password = document.getElementById("passWord").value;
+
+  document.getElementById("accountResult").innerHTML =
+    `Do you recognize that you have set a password and username.`;
+}
+
+function accountLogin() {
+  const username = document.getElementById("userName").value;
+  const password = document.getElementById("passWord").value;
+
+  const usernameValidation = document.getElementById("userNameConfirm").value;
+  const passwordValidation = document.getElementById("passWordConfirm").value;
+
+  if (usernameValidation === username && passwordValidation === password) {
+    document.getElementById("loginResult").innerHTML = "Account login successful";
+  } else {
+    document.getElementById("loginResult").innerHTML = "Account login unsuccessful!";
+  }
 }
