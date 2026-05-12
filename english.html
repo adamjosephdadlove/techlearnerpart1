@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="theTimer();">
        <div class="container"> 
            <a class="logo" href="index.html"> TechLearner </a>
            
@@ -33,6 +33,10 @@
            </div>
        </div>
       
+        <div class="timer-container"> 
+            <p id="timer-display">  </p>
+       </div>
+
        <p class="largeText">Which sentence uses personification?</p>
 <button class="questionButton" onclick="ans(); this.classList.toggle('selected')">A) The vacuum cleaner ate my socks.</button>
 <button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">B) The socks are striped.</button>
