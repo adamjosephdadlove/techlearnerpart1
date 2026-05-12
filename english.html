@@ -17,58 +17,52 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
        <div class="container"> 
-           <a class="logo"> TechLearner </a>
-           <div class="hamburger" id="menu-btn">
-    <div class="hamburger-lines"></div>
-    <div class="hamburger-lines"></div>
-    <div class="hamburger-lines"></div>
-           </div>
+           <a class="logo" href="index.html"> TechLearner </a>
            
            <div class="seperated-navbar" id="nav-bar">
            <ul> 
-               <li><a href="#mathQuiz"> Math </a> </li>
-               <li><a href="#scienceQuiz"> Science</a></li>
-               <li><a href="#englishQuiz"> English</a> </li>
+               <li><a href="math.html"> Math </a> </li>
+               <li><a href="science.html"> Science</a></li>
+               <li><a href="english.html"> English</a> </li>
            </ul>
            </div>
        </div>
+      
+       <p class="largeText">Which sentence uses personification?</p>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">A) The vacuum cleaner ate my socks.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">B) The socks are striped.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) I folded the socks.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Socks keep your feet warm.</button>
 
-<p class="largeText"> "The vacuum cleaner ate my socks" is an example of which literary device? </p>
-<button class="questionButton"> A) Simile </button>
-<button class="questionButton"> B) Onomatopoeia </button>
-<button class="questionButton"  onclick="ans()"> C) Personification </button>
-<button class="questionButton"> D) Alliteration </button>
+<p class="largeText">Which one is a simile?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) The clouds danced.</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) As brave as a lion.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) The wind whispered.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Time is a thief.</button>
 
+<p class="largeText">Which sentence uses hyperbole?</p>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">A) I have a million things to do.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">B) The cat slept.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) The door creaked.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) The sun is bright.</button>
 
-<p class="largeText"> Which of these sentences is a Simile? </p>
-<button class="questionButton"> A) He is a shining star. </button>
-<button class="questionButton"  onclick="ans()"> B) She is as brave as a lion. </button>
-<button class="questionButton"> C) The wind howled in the night. </button>
-<button class="questionButton"> D) Time is a thief. </button>
+<p class="largeText">Which is a metaphor?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) As fast as lightning.</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) The world is a stage.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) The leaves danced.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) The dog barked.</button>
 
-
-<p class="largeText"> "I have a million things to do today" is an example of: </p>
-<button class="questionButton"  onclick="ans()"> A) Hyperbole </button>
-<button class="questionButton"> B) Metaphor </button>
-<button class="questionButton"> C) Oxymoron </button>
-<button class="questionButton"> D) Understatement </button>
-
-
-<p class="largeText"> A comparison between two unlike things WITHOUT using "like" or "as" is a: </p>
-<button class="questionButton"> A) Simile </button>
-<button class="questionButton"  onclick="ans()"> B) Metaphor </button>
-<button class="questionButton"> C) Rhyme </button>
-<button class="questionButton"> D) Idiom </button>
-
-
-<p class="largeText"> "The delicious dinner danced on the table" is an example of: </p>
-<button class="questionButton"> A) Personification </button>
-<button class="questionButton"> B) Simile </button>
-<button class="questionButton"> C) Alliteration</button> 
-<button class="questionButton"  onclick="ans()"> D) Both A and C </button>
-
+<p class="largeText">Which answer has BOTH personification and alliteration?</p>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) The river ran rapidly.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">B) The dinner danced.</button>
+<button class="questionButton" onclick="ans(); this.classList.toggle('selected')">C) The delicious dinner danced.</button>
+<button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) The dog dug deep.</button>
+<button id="finalSubmission" onclick="submit()">Submit quiz</button>
+  <p id="scoreResult"> </p>
   </body>
-        </html>
+</html>
