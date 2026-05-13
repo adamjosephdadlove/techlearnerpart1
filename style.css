@@ -65,6 +65,17 @@ ul li:hover {
   margin-left: 40px;
 }
 
+.timer-container {
+  display: flex;
+  justify-content: last-baseline;
+}
+
+#timer-display {
+  font-family: "Jetbrains-Mono", monospace;
+  font-weight: 400px;
+  color: #222;
+}
+
 @media (max-width: 650px) {
   .logo {
     font-size: 24px;
