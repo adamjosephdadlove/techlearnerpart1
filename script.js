@@ -47,7 +47,6 @@ window.addEventListener("load", function() {
       clearInterval(interval); 
          time--;
       }
+       theTimer();
    }
-
-   theTimer();
 });
