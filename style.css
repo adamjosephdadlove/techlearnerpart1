@@ -67,12 +67,12 @@ ul li:hover {
 
 .timer-container {
   display: flex;
-  justify-content: last-baseline;
+  justify-content: flex-end;
 }
 
 #timer-display {
   font-family: "Jetbrains-Mono", monospace;
-  font-weight: 400px;
+  font-weight: 400;
   color: #222;
 }
 
@@ -121,7 +121,7 @@ ul li:hover {
 
 .largeText, #accountResult, #loginResult {
   font-family: "Jetbrains Mono", monospace;
-  font-weight: 600px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -163,7 +163,7 @@ ul li:hover {
   gap: 15px;
   color: #222;
   background-color: transparent;
-  font-family: "Mono Space", monospace; 
+  font-family: "Space Mono", monospace; 
   border-radius: 20px;
   padding: 10px;
   box-shadow:  -3px 3px 5px rgba(0,0,0,0.2);
@@ -249,7 +249,7 @@ footer {
   align-self: center;
   color: white;
   background-color: #222;
-  font-family: "Mono Space", monospace; 
+  font-family: "Space Mono", monospace; 
   border-radius: 20px;
   padding: 10px;
   box-shadow:  -3px 3px 5px rgba(0,0,0,0.2);

@@ -21,27 +21,31 @@
     <script src="script.js"></script>
   </head>
 
-  <body>
+  <body onload="theTimer();">
      <div class="container"> 
-           <a class="logo" href="index.html"> TechLearner </a>
+            <a class="logo" href="index.html"> TechLearner </a>
 
-           
-           <div class="seperated-navbar" id="nav-bar">
-           <ul> 
-               <li><a href="math.html"> Math </a> </li>
-               <li><a href="science.html"> Science</a></li>
-               <li><a href="english.html"> English</a> </li>
-           </ul>
-           </div>
+            
+            <div class="seperated-navbar" id="nav-bar">
+            <ul> 
+                <li><a href="math.html"> Math </a> </li>
+                <li><a href="science.html"> Science</a></li>
+                <li><a href="english.html"> English</a> </li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="timer-container"> 
+            <p id="timer-display">  </p>
        </div>
-       
-       <p class="largeText">Which noble gas is the lightest?</p>
+        
+        <p class="largeText">Which noble gas is the lightest?</p>
 <button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) Argon</button>
 <button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) Helium</button>
 <button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) Neon</button>
 <button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">D) Krypton</button>
 
-<p class="largeText">Why are noble gases called “inert”?</p>
+<p class="largeText">Why are noble gases called "inert"?</p>
 <button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">A) They are metals</button>
 <button class="questionButton" onclick="ans(); this.classList.toggle('selected')">B) Their outer shells are full</button>
 <button class="questionButton" onclick="wrongAns(); this.classList.toggle('selected')">C) They are radioactive</button>
