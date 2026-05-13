@@ -42,6 +42,7 @@ window.addEventListener("load", function() {
    const interval = setInterval(theTimer ,1000)
    function theTimer() {
       time--;
+      timerDisplay.innerHTML = time;
       if(time <= 0) {
       timerDisplay.innerHTML = "Time's Up!";
       timerDisplay.style.color = "rgb(240, 10, 10)";
