@@ -34,18 +34,20 @@ function accountLogin() {
     document.getElementById("loginResult").innerHTML = "Account login unsuccessful!";
   }
 }
+window.addEventListener("load", function() {
+   const timerDisplay = document.getElementById('timer-display');
 
-  const timer = document.getElementById("timer-display");
+   let time = 20;
+   
+   const interval = setInterval(theTimer ,1000)
+   function theTimer() {
+      if(time <= 0) {
+      timerDisplay.innerHTML = "Time's Up!";
+      timerDisplay.style.color = rgb(240, 10, 10);
+      clearInterval(interval); 
+         time--;
+      }
+   }
 
-  function theTimer() {
-    for(let time=20; time>0; time--) {
-      timer.innerHTML = `${time}`;
-  }
-
-  if(time<0) {
-    timer.innerHTML = "Time's Up";
-    timer.style.color="rgb(240,10,10)";
-  }
-}
-
-  setInterval(theTimer, 1000);
+   theTimer();
+});
