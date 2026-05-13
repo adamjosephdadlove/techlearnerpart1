@@ -38,7 +38,7 @@ function accountLogin() {
   const timer = document.getElementById("timer-display");
 
   function theTimer() {
-    for(time=20; timer>0; timer--) {
+    for(time=20; time>0; timer--) {
       timer.innerHTML = `${time}`;
   }
 
@@ -48,4 +48,4 @@ function accountLogin() {
   }
 }
 
-  setInterval(theTimer(), 1000);
+  setInterval(theTimer, 1000);
