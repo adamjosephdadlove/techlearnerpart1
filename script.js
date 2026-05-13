@@ -47,6 +47,6 @@ window.addEventListener("load", function() {
       timerDisplay.style.color = "rgb(240, 10, 10)";
       clearInterval(interval); 
       }
-       theTimer();
    }
+    theTimer();
 });
