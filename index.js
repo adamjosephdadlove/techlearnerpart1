@@ -34,3 +34,18 @@ function accountLogin() {
     document.getElementById("loginResult").innerHTML = "Account login unsuccessful!";
   }
 }
+
+  const timer = document.getElementById("timer-display");
+
+  function theTimer() {
+    for(time=20; timer>0; timer--) {
+      timer.innerHTML = `${time}`;
+  }
+
+  if(time<0) {
+    timer.innerHTML = "Time's Up";
+    timer.style.color="rgb(240,10,10)";
+  }
+}
+
+  setInterval(theTimer(), 1000);
