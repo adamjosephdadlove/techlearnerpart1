@@ -69,20 +69,16 @@ ul li:hover {
 }
 
 .timer-container {
+  background-color: tranparent;
   border-radius: 5px;
-  border: 1px solid #222;
-  align-self: center;
-  margin: 20px 0px; 
-  background-color: transparent:
-  width: 100px;
-  height: 40px;
 }
 
 #timer-display {
   font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   color: #222;
-  padding: 15px 30px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: 0;
   font-size: 24px;
   text-align: center;
