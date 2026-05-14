@@ -53,5 +53,5 @@ window.addEventListener("load", function() {
 });
 
 function styling(element) {
-   element.classList.toggle(selected);
+   element.classList.toggle('selected');
 }
