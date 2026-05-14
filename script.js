@@ -52,6 +52,6 @@ window.addEventListener("load", function() {
    }
 });
 
-function styling() {
-   this.classList.toggle(selected);
+function styling(element) {
+   element.classList.toggle(selected);
 }
