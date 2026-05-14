@@ -171,7 +171,7 @@ ul li:hover {
 .questionButton.selected, .questionButton.selected:hover {
   background-color: #444 !important;
   color: #fff !important;
-  outline: 3px solid #00aaff !important;
+  border: 3px solid #00aaff !important;
 }
 
 .questionButton:hover {
