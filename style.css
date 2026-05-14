@@ -68,13 +68,14 @@ ul li:hover {
 .timer-container {
   border-radius: 5px;
   border: 1px solid #222;
-  justify-self: center;
+  align-self: center;
 }
 
 #timer-display {
   font-family: "Jetbrains-Mono", monospace;
   font-weight: 400;
   color: #222;
+  padding: 40px;
 }
 
 @media (max-width: 650px) {
