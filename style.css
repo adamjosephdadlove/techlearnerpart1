@@ -2,8 +2,11 @@ body {
   display: flex;       
   flex-direction: column;
   background-color: white;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
-  min-height: 900px;
+  padding: 20px;
+}
 }
 
 .container {
@@ -69,13 +72,18 @@ ul li:hover {
   border-radius: 5px;
   border: 1px solid #222;
   align-self: center;
+  margin: 20px 0px; 
+  background-color: transparent:
 }
 
 #timer-display {
-  font-family: "Jetbrains-Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 400;
   color: #222;
-  padding: 40px;
+  padding: 15px 30px; 
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
 }
 
 @media (max-width: 650px) {
@@ -122,7 +130,7 @@ ul li:hover {
 }
 
 .largeText, #accountResult, #loginResult {
-  font-family: "Jetbrains Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 600;
   text-align: center;
 }
