@@ -6,7 +6,7 @@ function ans() {
 }
 
 function wrongAns() {
-   score-=1;
+      score-=1;
     if(score < 0) score=0;
   }
   function submit() {
@@ -54,5 +54,4 @@ window.addEventListener("load", function() {
 
 function styling(this) {
    this.classList.toggle(selected);
-   this.classList.remove(selected);
 }
