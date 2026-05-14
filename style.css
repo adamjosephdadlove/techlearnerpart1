@@ -1,12 +1,10 @@
 body {
   display: flex;       
   flex-direction: column;
-  align-items: stretch;
   background-color: white;
   margin: 0;
   min-height: 900px;
 }
-
 
 .container {
   display: flex;
@@ -67,21 +65,11 @@ ul li:hover {
   margin-left: 40px;
 }
 
-.timer-container {
-  background-color: transparent;
-  border-radius: 5px;
-  border: none;
-}
-
 #timer-display {
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 400;
-  color: #222;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin: 0;
-  font-size: 24px;
+  font-family: "JetBrains-Mono", monospace;
+  font-weight: 400px;
   text-align: center;
+  color: #222;
 }
 
 @media (max-width: 650px) {
@@ -128,8 +116,8 @@ ul li:hover {
 }
 
 .largeText, #accountResult, #loginResult {
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 600;
+  font-family: "Jetbrains Mono", monospace;
+  font-weight: 600px;
   text-align: center;
 }
 
@@ -171,7 +159,7 @@ ul li:hover {
   gap: 15px;
   color: #222;
   background-color: transparent;
-  font-family: "Space Mono", monospace; 
+  font-family: "Mono Space", monospace; 
   border-radius: 20px;
   padding: 10px;
   box-shadow:  -3px 3px 5px rgba(0,0,0,0.2);
@@ -181,15 +169,15 @@ ul li:hover {
   margin-bottom: 5px;
 }
 
-.questionButton.selected, .questionButton.selected:hover {
-  background-color: #444 !important;
-  color: #fff !important;
-  border: 3px solid #00aaff !important;
-}
-
 .questionButton:hover {
   background-color: #222;
   color: white;
+}
+
+.selected {
+  background-color: #444;
+  color: #fff;
+  outline: 3px solid #00aaff;
 }
 
 #userName, #passWord, #userNameConfirm, 
@@ -257,7 +245,7 @@ footer {
   align-self: center;
   color: white;
   background-color: #222;
-  font-family: "Space Mono", monospace; 
+  font-family: "Mono Space", monospace; 
   border-radius: 20px;
   padding: 10px;
   box-shadow:  -3px 3px 5px rgba(0,0,0,0.2);
