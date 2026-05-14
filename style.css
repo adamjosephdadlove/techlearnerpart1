@@ -168,15 +168,15 @@ ul li:hover {
   margin-bottom: 5px;
 }
 
-.questionButton:hover {
-  background-color: #222;
-  color: white;
-}
-
-.selected {
+.questionButton.selected {
   background-color: #444;
   color: #fff;
   outline: 3px solid #00aaff;
+}
+
+.questionButton:hover {
+  background-color: #222;
+  color: white;
 }
 
 #userName, #passWord, #userNameConfirm, 
