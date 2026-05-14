@@ -65,6 +65,12 @@ ul li:hover {
   margin-left: 40px;
 }
 
+.timer-container {
+  border-radius: 5px;
+  border: 1px solid #222;
+  justify-self: center;
+}
+
 #timer-display {
   font-family: "Jetbrains-Mono", monospace;
   font-weight: 400;
