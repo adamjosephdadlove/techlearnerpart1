@@ -51,3 +51,8 @@ window.addEventListener("load", function() {
       time--;
    }
 });
+
+function styling(this) {
+   this.classList.toggle(selected);
+   this.classList.remove(selected);
+}
