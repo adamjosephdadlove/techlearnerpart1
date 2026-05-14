@@ -44,7 +44,7 @@ window.addEventListener("load", function() {
    function theTimer() {
       timerDisplay.innerHTML = `Time Left: ${time}`;
       if(time <= 0) {
-      timerDisplay.innerHTML = "Time's Up!";
+      timerDisplay.innerHTML = `Time's Up!`;
       timerDisplay.style.color = "rgb(240, 10, 10)";
       clearInterval(interval); 
       }
