@@ -34,7 +34,7 @@ function accountLogin() {
     document.getElementById("loginResult").innerHTML = "Account login unsuccessful!";
   }
 }
-window.addEventListener("load", function() {
+window.addEventListener("DOMContentLoaded", function() {
    const timerDisplay = document.getElementById('timer-display');
 
    let time = 20;
