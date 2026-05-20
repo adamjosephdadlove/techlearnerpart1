@@ -190,10 +190,6 @@ ul li:hover {
   border-bottom: 1px solid #111;
   outline: none;
 }
-
-#userName:focus, #passWord:focus {
-  border-bottom: 3px solid #111;
-}
  
 .loginContainer {
   display: flex;
