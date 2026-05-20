@@ -17,38 +17,21 @@ function createAccount() {
   const username = document.getElementById("userName").value;
   const password = document.getElementById("passWord").value;
 
-  if (username === "" || password === "") {
-    document.getElementById("accountResult").innerHTML = "Please enter a valid username and password.";
-    return;
-  }
-
-  localStorage.setItem("savedUsername", username);
-  localStorage.setItem("savedPassword", password);
-
   document.getElementById("accountResult").innerHTML =
-    `Account created successfully! You can now log in below.`;
+    `Do you recognize that you have set a password and username.`;
 }
 
 function accountLogin() {
- 
   const username = document.getElementById("userNameConfirm").value;
   const password = document.getElementById("passWordConfirm").value;
 
-  const registeredUsername = localStorage.getItem("savedUsername");
-  const registeredPassword = localStorage.getItem("savedPassword");
+  const usernameValidation = document.getElementById("userName").value;
+  const passwordValidation = document.getElementById("passWord").value;
 
-  
-  if (username === registeredUsername && password === registeredPassword) {
-    document.getElementById("loginResult").innerHTML = "Account login successful!";
-    
-   
-    sessionStorage.setItem("userSessionToken", "token" + Math.random());
-    sessionStorage.setItem("activeUser", username); 
-    
-    
-    window.location.href = "math.html";
+  if (usernameValidation === username && passwordValidation === password) {
+    document.getElementById("loginResult").innerHTML = "Account login successful";
   } else {
-    document.getElementById("loginResult").innerHTML = "Invalid username or password!";
+    document.getElementById("loginResult").innerHTML = "Account login unsuccessful!";
   }
 }
 window.addEventListener("DOMContentLoaded", function() {
