@@ -46,6 +46,20 @@ window.addEventListener("DOMContentLoaded", function() {
       if(time <= 0) {
       timerDisplay.innerHTML = `Time's Up!`;
       timerDisplay.style.color = "rgb(240, 10, 10)";
+      questionContainer.style.display="none";
+         if(!element.classList.contains('selected')) {
+      document.getElementById("scoreResult").innerHTML = "You didn't complete the test!";
+         }
+         else {
+      document.getElementById("scoreResult").textContent = `You got ${score} out of 5`;
+         }
+         document.createElement("button");
+         document.append("button");
+         button.onclick="showElements()";
+         button.innerHTML="Restart Test";
+         button.style.color="#fff";
+         button.style.justifySelf="center";
+         button.style.backgroundColor="#222";
       clearInterval(interval); 
       }
       time--;
@@ -54,4 +68,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
 function styling(element) {
    element.classList.toggle('selected');
+}
+
+function showElement() {
+   questionContainer.style.display="flex";
+   questionContainer.style.flexDirection="column";
+   questionContainer.style.alignItems="center";
 }
