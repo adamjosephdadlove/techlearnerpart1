@@ -1,5 +1,5 @@
 let score = 0; 
-
+const questionContainer = document.getElementById("questionCont");
 function ans() {
    score+=1;
     if(score > 5) score=5;
