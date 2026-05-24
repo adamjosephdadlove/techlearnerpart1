@@ -256,3 +256,9 @@ footer {
   font-family: "Jetbrains Mono", monospace;
   text-align: center;
 }
+
+#questionCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
