@@ -164,7 +164,6 @@ ul li:hover {
   display: flex;
   flex-direction: column;
   align-self: center;
-  justify-content: center;
   text-align: center;
   gap: 15px;
   color: #222;
